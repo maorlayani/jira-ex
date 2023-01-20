@@ -1,0 +1,64 @@
+.app-header {
+    height: 50px;
+    width: 100vw;
+    background-color: $header-background;
+    color: $table-background-white;
+    justify-content: space-between;
+    padding: 0 1em;
+    position: fixed;
+
+    .right-side-container {
+        align-items: center;
+        gap: .8em;
+
+        img {
+            width: 130px;
+        }
+
+        .links-container {
+            gap: 4px;
+            font-size: 0.7em;
+
+            a {
+                padding: 1em;
+                height: 50px;
+                color: $table-border;
+
+                &.selected {
+                    box-shadow: inset 0 -4px 0 $header-nav;
+                    color: $header-nav;
+                }
+
+                &:hover {
+                    color: $header-nav;
+                    box-shadow: inset 0 -4px 0 $header-nav;
+                }
+            }
+        }
+    }
+
+    .left-side-container {
+
+        .login-user {
+            align-items: center;
+            margin-inline-end: .6em;
+
+            .user-icon-container {
+                border: 1.5px solid $table-background-white;
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                overflow: hidden;
+                margin-inline-end: .4em;
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            span {
+                font-size: .7em;
+            }
+        }
+    }
+}

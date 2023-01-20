@@ -1,0 +1,27 @@
+.popup-msg {
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    background-color: $table-background-white;
+    border-radius: 12px;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $popup-success;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    transition-property: transform;
+    transition-timing-function: ease-in;
+
+    &.open {
+        transform: translateX(100%);
+    }
+
+    span {
+        text-align: center;
+        color: $popup-success;
+        font-size: 0.8em;
+        padding: .2em;
+    }
+}

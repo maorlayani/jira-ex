@@ -1,0 +1,21 @@
+.finding-item-list {
+    border-bottom: 1px solid $table-border;
+    background-color: $table-background-white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    .table-header {
+        font-weight: bold;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+
+        .finding-desc {
+            flex-grow: 1;
+        }
+
+        .finding-Ticket {
+            margin-inline-end: 7em;
+            width: 120px;
+        }
+    }
+}

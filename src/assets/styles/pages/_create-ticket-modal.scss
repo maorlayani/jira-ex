@@ -1,0 +1,138 @@
+.create-ticket-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .modal-container {
+        width: 530px;
+        height: 490px;
+        background-color: $table-background-white;
+        border-radius: 5px;
+        padding: 1.1em;
+
+        &:hover {
+            cursor: auto;
+        }
+
+        .modal-header {
+            justify-content: space-between;
+            border-bottom: 1px solid $table-border;
+            margin-block-end: 1em;
+            padding-bottom: 1.1em;
+
+            span {
+                font-weight: bold;
+                font-size: .95em;
+                color: $modal-title;
+            }
+
+            img {
+                width: 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .ticket-main-content {
+            display: flex;
+            justify-content: space-between;
+            margin-block-end: 1em;
+            padding-block-end: 1em;
+            border-bottom: 1px solid $table-border;
+
+            .custom-select {
+                display: flex;
+                flex-direction: column;
+
+                .tag-title {
+                    margin-block-end: 1em;
+                    font-size: .7em;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .finding-container {
+            flex-direction: column;
+            margin-block-end: 4.5em;
+
+            .input-container {
+                flex-direction: column;
+
+                label {
+                    margin-block-end: .5em;
+                    font-size: .7em;
+                    font-weight: bold;
+                }
+
+                input,
+                textarea {
+                    padding: .6em;
+                    border-radius: 3px;
+                    border: 1px solid $table-border;
+                    font-family: inherit;
+                    font-size: .85em;
+                    margin-block-end: .5em;
+                    outline: none;
+                }
+
+                textarea[name="description"] {
+                    height: 80px;
+                    resize: none;
+                }
+            }
+        }
+
+        .btn-container {
+            justify-content: flex-end;
+            gap: 10px;
+
+            .btn-modal {
+                border-radius: 15px;
+                padding: .5em .4em;
+                font-size: .7em;
+
+                &:hover {
+                    opacity: .6;
+                }
+            }
+
+            .create {
+                color: $table-background-white;
+                background-color: $create-ticket;
+                width: 90px;
+                border: none;
+            }
+
+            .cancel {
+                background-color: $table-background-white;
+                border: 1px solid $select-option-black;
+                width: 65px;
+            }
+        }
+    }
+
+    .radio-label-img {
+        width: 90px;
+        display: flex;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+.black-screen {
+    background-color: $black-screen-background;
+    cursor: pointer;
+    transition: opacity .6s;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

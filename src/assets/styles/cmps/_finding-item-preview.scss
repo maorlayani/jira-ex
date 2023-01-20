@@ -1,0 +1,60 @@
+.finding-item-preview {
+    border: 1px solid $table-border;
+    border-bottom: unset;
+    padding: .8em;
+    display: flex;
+    font-size: 0.75em;
+
+    &:first-of-type {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    &:last-of-type {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .text-container {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .finding-title {
+        margin: 0 1em;
+        width: 220px;
+    }
+
+    .finding-desc {
+        width: 250px;
+        margin-inline-start: 10em;
+        margin-inline-end: 5em;
+        flex-grow: 1;
+    }
+
+    .create-ticket {
+        border: none;
+        background-color: $table-background-white;
+        color: $create-ticket;
+        font-weight: bold;
+        font-size: .95em;
+        width: 120px;
+        margin-inline-end: 7em;
+    }
+
+    .ticket-preview {
+        margin-inline-end: 7em;
+        align-items: center;
+        width: 120px;
+        gap: 4px;
+
+        img {
+            width: 15px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
